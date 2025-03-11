@@ -2,19 +2,64 @@
     <head>
         <title>Mac Git Class</title>
         <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1 class="container">Welcome to my website</h1>
-        <h2 class="purple-bg">This is a heading 2</h2>
-        <p class="black-bg">This is a paragraph</p>
-        <div class="black-bg">
-            <p>This is a paragraph inside a div</p>
-        </div>
-        <div class="purple-bg">
-            <p>This is a paragraph inside a div</p>
-        </div>
-        <div class="container">
-            <p>This is a paragraph inside a div</p>
-        </div>
-    </body>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Magical Story</title>
+                <style>
+                    body {
+                        margin: 0;
+                        padding: 0;
+                        font-family: 'Georgia', serif;
+                        background: linear-gradient(180deg, #2c3e50, #1a1a1a);
+                        color: #f1c40f;
+                        text-align: center;
+                        overflow-x: hidden;
+                    }
+                .story-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.8);
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1.5s forwards;
+        }
+        p:nth-child(2) { animation-delay: 1s; }
+        p:nth-child(3) { animation-delay: 2s; }
+        p:nth-child(4) { animation-delay: 3s; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="story-container">
+        <h1>The Enchanted Forest</h1>
+        <p>Once upon a time, in a land of mist and magic, there was a forest unlike any other.</p>
+        <p>Golden fireflies danced in the air, whispering secrets of ancient times.</p>
+        <p>A young traveler stepped into the woods, drawn by an unseen force.</p>
+        <p>Little did they know, the forest had been waiting for them all along...</p>
+    </div>
+</body>
 </html>
